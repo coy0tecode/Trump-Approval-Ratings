@@ -23,8 +23,8 @@ summary(averages)
 summary(averages_by_grade)
 
 # rename column X
-averages = rename(averages, c("X"="Pollster"))
-averages_by_grade = rename(averages_by_grade, c("X"="Pollster"))
+averages = rename(averages, c("Pollster"="X"))
+averages_by_grade = rename(averages_by_grade, c("Pollster"="X"))
 
 
 #DIVERGING LOLLIPOP (APPROVE) -----------------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@ Graded_Adjusted_Approve$Grade = factor(Graded_Adjusted_Approve$Grade, levels=Gra
 # create plot
 ggplot(Graded_Adjusted_Approve, aes(x=Grade, y=Adjusted_Approval_Average))+
   geom_bar(stat='identity', width=0.5, fill='springgreen4')+
-  scale_y_continuous(breaks=seq(0,100,10))
+  scale_y_continuous(breaks=seq(0,100,10))+
   labs(title="Average Adjusted Approval by Grade",
        subtitle="Ordered from lowest to highest")
 
