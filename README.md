@@ -26,4 +26,4 @@ Adjusted Approval by Grade - bar graph comparing adjusted approval ratings
 Adjusted Disapproval by Grade - bar graph comparing adjusted disapproval ratings
 Adjusted Averages Comparison by Grade - bar graph comparing adjusted ratings ordered by grade
 
-Summary HTML file now available.
+Summary HTML file now available (it is currently too large for Github to display, so it has to be downloaded and viewed).
